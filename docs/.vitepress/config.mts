@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "DaoHangWu",
   description: "A VitePress Site",
+  base: '/DaoHangWu/',
+  srcDir: './src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -17,6 +19,13 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: 'Guide',
+        items: [
+          { text: 'Index', link: '/guide/index' },
+          { text: 'Getting Started', link: '/guide/getting-started' }
         ]
       }
     ],
